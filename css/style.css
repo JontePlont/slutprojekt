@@ -1,24 +1,25 @@
 :root{
-	--yearlycolor: #fc1414;
+	--yearlycolor1: #FF0033;
+	--yearlycolor2: #666666;
 }
 header{
 	text-align: center;
 	height: 80px;
-	color: #505050;
+	color: var(--yearlycolor2);
 	box-shadow: 0px 1px 8px -1px rgba(0,0,0,0.7);
 }
 html{
 	overflow-x:hidden;
 	overflow-y:scroll;
 }
-body{
+.content{
 	height:1000px;
 }
 ::-webkit-scrollbar{
 	width: 12px;
 }
 ::-webkit-scrollbar-thumb{
-	background: var(--yearlycolor);
+	background: var(--yearlycolor1);
 	border-radius: 10px;
 }
 .th{
@@ -30,9 +31,14 @@ body{
 }
 .log{
 	font-size: 40px;
-	color: #505050;
+	color: var(--yearlycolor2);
+}
+.meny{
+	font-style:bold;
+	color: var(--yearlycolor2);
 }
 .slide1{
+	margin:auto;
 	margin-top:30px;
 	height: 300px;
 	width:300px;
@@ -44,4 +50,13 @@ body{
 .slideimg{
 	width: 300px;
 	height: 300px;
+}
+.widget{
+	border-left: 2px solid gray;
+}
+.red{
+	background-color: red;
+}
+footer{
+	text-align:center;
 }
