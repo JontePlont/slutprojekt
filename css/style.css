@@ -53,10 +53,29 @@ html{
 }
 .widget{
 	border-left: 2px solid gray;
+	float:right;
+}
+.datum{
+}
+.material{
+	margin:auto;
+	text-align:center;
+}
+.btn-material{
+	background-color: var(--yearlycolor1);
+	color: white;
+}
+.btn-material:hover{
+	color: #ffcccc
 }
 .red{
 	background-color: red;
 }
 footer{
 	text-align:center;
+	height: 80px;
+	border-top: 2px solid #666666;
+}
+.footertxt{
+	margin-top: 30px;
 }
