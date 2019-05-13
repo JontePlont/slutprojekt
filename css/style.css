@@ -1,5 +1,5 @@
 :root{
-	--yearlycolor1: #FF0033;
+	--yearlycolor1: #E80C94;
 	--yearlycolor2: #666666;
 }
 header{
@@ -66,7 +66,7 @@ html{
 	color: white;
 }
 .btn-material:hover{
-	color: #ffcccc
+	color: #dddddd
 }
 .red{
 	background-color: red;
@@ -74,8 +74,9 @@ html{
 footer{
 	text-align:center;
 	height: 80px;
-	border-top: 2px solid #666666;
+
+	background-color: var(--yearlycolor2);
 }
 .footertxt{
-	margin-top: 30px;
+	padding-top: 30px;
 }
