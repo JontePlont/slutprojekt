@@ -13,7 +13,7 @@ html{
 	overflow-y:scroll;
 }
 .content{
-	height:1000px;
+	min-height:1000px;
 }
 ::-webkit-scrollbar{
 	width: 12px;
@@ -35,6 +35,11 @@ html{
 }
 .meny{
 	font-style:bold;
+	color: var(--yearlycolor2);
+}
+.count{
+	text-align:center;
+	margin-top: 20px;
 	color: var(--yearlycolor2);
 }
 .slide1{
@@ -66,10 +71,34 @@ html{
 	color: white;
 }
 .btn-material:hover{
-	color: #dddddd
+	color: #eeeeee;
+	box-shadow: 0px 1px 5px -1px var(--yearlycolor2);
 }
 .red{
 	background-color: red;
+}
+.kontakt{
+	margin-left: 20px;
+	color: var(--yearlycolor2);
+}
+.karta{
+	margin-left:18px;
+	margin-top: 20px;
+	color: var(--yearlycolor2);
+}
+.googlemap{
+	box-shadow: 0px 1px 3px -1px var(--yearlycolor2);
+	margin-bottom: 20px;
+}
+.between{
+	width: 300px;
+}
+.socmed{
+	margin-left: 20px;
+	color: var(--yearlycolor2);
+}
+.facebook{
+	box-shadow: 0px 1px 3px -1px var(--yearlycolor2);
 }
 footer{
 	text-align:center;
