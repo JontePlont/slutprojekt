@@ -1,4 +1,4 @@
-//FUnktion för nedräkning till tjejhack
+//Funktion för nedräkning till tjejhack
 window.onload = function(){// Här skrivs datum för nästa event in
 var datum = new Date("May 29, 2019 08:30:00").getTime();
 
@@ -18,13 +18,13 @@ var x = setInterval(function() {
   var sekund = Math.floor((tidkvar % (1000 * 60)) / 1000);
 
   // Skriver ut det i div med id "demo"
-  document.getElementById("demo").innerHTML = dag + " dagar " + timmar + " timmar "
+  document.getElementById("nedräk").innerHTML = dag + " dagar " + timmar + " timmar "
   + minut + " minuter " + sekund + " sekunder ";
 
   // Skriver text om datumet passerat
   if (tidkvar < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Information om nästa tjejhack kommer snart!";
+    document.getElementById("nedräk").innerHTML = "Information om nästa tjejhack kommer snart!";
   }
 }, 1000);
 }

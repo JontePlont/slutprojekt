@@ -45,18 +45,19 @@ html{
 .slide1{
 	margin:auto;
 	margin-top:30px;
-	height: 300px;
-	width:500px;
+	height: 210px;
+	width:350px;
 	justify-content:center;
 	object-fit:cover;
 	overflow:hidden;
 }
 .slideimg{
-	width: 500px;
-	height: 300px;
+	width: 350px;
+	height: 210px;
 }
 .material{
 	margin:auto;
+	margin-top: 20px;
 	text-align:center;
 }
 .btn-material{
@@ -103,7 +104,35 @@ html{
 	height: 200px;
 	object-fit: cover;
 }
-
+.gallerirubrik{
+	text-align: center;
+	color: var(--yearlycolor2);
+	margin-bottom: 20px;
+}
+.container{
+	box-shadow: 0px 1px 7px -1px rgba(0,0,0,0.7);
+}
+.galleri{
+	justify-content: flex-start;
+	display: flex;
+	align-self:auto;
+	flex-direction: row;
+	flex-flow: row-wrap;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
+}
+.bg{
+	width: 300px;
+	height: 200px;
+	margin-top: 20px;
+}
+.galleribild{
+	object-fit: cover;
+	width:300px;
+	height: auto;
+	max-height: 200px;
+}
 .kontakt{
 	margin-left: 20px;
 	color: var(--yearlycolor2);
