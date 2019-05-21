@@ -1,6 +1,6 @@
 //FUnktion för nedräkning till tjejhack
 window.onload = function(){// Här skrivs datum för nästa event in
-var datum = new Date("May 27, 2019 08:30:00").getTime();
+var datum = new Date("May 29, 2019 08:30:00").getTime();
 
 // Countdown ska uppdateras varje sekund
 var x = setInterval(function() {
