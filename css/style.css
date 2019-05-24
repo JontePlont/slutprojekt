@@ -1,6 +1,6 @@
 :root{
-	--yearlycolor1: #E80C94;
-	--yearlycolor2: #666666;
+	--yearlycolor1: #E80C94; /*Huvudfärg för året*/
+	--yearlycolor2: #666666; /*Komplementfärg för året*/
 }
 header{
 	text-align: center;
@@ -8,12 +8,11 @@ header{
 	color: var(--yearlycolor2);
 	box-shadow: 0px 1px 8px -1px rgba(0,0,0,0.7);
 }
+/*Scrollfunktion och en font från google*/
 html{
 	overflow-x:hidden;
 	overflow-y:scroll;
-}
-.content{
-	min-height: 1000px;
+	font-family: 'Exo', sans-serif;
 }
 ::-webkit-scrollbar{
 	width: 12px;
@@ -54,6 +53,7 @@ html{
 .slideimg{
 	width: 350px;
 	height: 210px;
+	object-fit:cover;
 }
 .material{
 	margin:auto;
@@ -72,11 +72,22 @@ html{
 .red{
 	background-color: red;
 }
-.startrubrik, .starttext{
+.startrubrik, .starttext, .video{
 	margin-left: 20px;
 }
 .startrubrik{
 	margin-top: 40px;
+}
+.video{
+	border: 0;
+	height: 200px;
+	max-width: 350px;
+}
+.link{
+	color: var(--yearlycolor1);
+}
+.link:hover{
+	color: var(--yearlycolor1);
 }
 .omtext, .omrubrik{
 	
@@ -85,6 +96,7 @@ html{
 .omrubrik{
 	margin-top: 50px;
 }
+/*Flexbox*/
 .mentorer{
 	justify-content: flex-start;
 	display: flex;
@@ -113,6 +125,7 @@ html{
 .container{
 	box-shadow: 0px 1px 7px -1px rgba(0,0,0,0.7);
 }
+/*Flexbox*/
 .galleri{
 	justify-content: flex-start;
 	display: flex;
@@ -134,6 +147,12 @@ html{
 	height: auto;
 	max-height: 200px;
 }
+.tipsrubrik{
+	margin-top: 50px;
+}
+.tipsrubrik, .tipstext{
+	margin-left: 20px;
+}
 .kontakt{
 	margin-left: 20px;
 	color: var(--yearlycolor2);
@@ -146,6 +165,9 @@ html{
 .googlemap{
 	box-shadow: 0px 1px 3px -1px var(--yearlycolor2);
 	margin-bottom: 20px;
+	max-width: 350px;
+	height: 300px;
+	border: 0;
 }
 .between{
 	width: 300px;
@@ -156,6 +178,10 @@ html{
 }
 .facebook{
 	box-shadow: 0px 1px 3px -1px var(--yearlycolor2);
+	allowTransparency: true;
+	border: 0;
+	max-width: 300px;
+	height: 500px;
 }
 footer{
 	margin-top: 50px;
@@ -180,61 +206,3 @@ footer{
 
 
 
-.ree{
-    font-size: 20px;
-    color: var(--yearlycolor2);
-  font-weight: 300;
-  text-align: center;
-}
-
-.question{
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-.answers {
-  margin-bottom: 20px;
-  text-align: left;
-  display: inline-block;
-}
-.answers label{
-  display: block;
-  margin-bottom: 10px;
-}
-.quizbtn{
-	margin-top: 20px;
-  font-family: 'Work Sans', sans-serif;
-    font-size: 22px;
-    background-color: #279;
-    color: #fff;
-    border: 0px;
-    border-radius: 3px;
-    padding: 20px;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-.quizbtn:hover{
-    background-color: #38a;
-}
-
-
-
-
-
-.slide{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-.active-slide{
-  opacity: 1;
-  z-index: 2;
-}
-.quiz-container{
-  position: relative;
-  height: 200px;
-  margin-top: 40px;
-}
