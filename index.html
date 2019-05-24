@@ -7,7 +7,11 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
 
   <title>Tjejhack</title>
 
@@ -21,14 +25,14 @@
   <header>
 
 
-    <!-- Image and text -->
+    <!-- Bilder och text i header -->
     <nav class="navbar navbar-light">
       <a class="navbar-brand" href="index.html">
-        <img class="th" src="img/thlog.png" width="47" height="60" class="d-inline-block align-top" alt="">
+        <img src="img/thlog.png" width="47" height="60" class="d-inline-block align-top th" alt="">
         <span class="log">Tjejhack</span>
       </a>
       <a href="https://www.ronneby.se/sidowebbplatser/gymnasieskolan-knut-hahn.html">
-        <img class="kh" src="img/knuthahn.png" width="70" height="70">
+        <img class="kh" src="img/knuthahn.png" width="70" height="70" alt="">
       </a>
     </nav>
     
@@ -40,7 +44,7 @@
   <div class="content">
 
 
-  <!-- Navbar -->
+  <!-- Meny -->
     <nav class="navbar navbar-expand-lg navbar-light ">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +70,7 @@
         </ul>
       </div>
     </nav>
-    <!-- Slut på Navbar -->
+    <!-- Slut på meny -->
 
     
 
@@ -80,7 +84,7 @@
     
     <div class="row">
 
-      <!-- Slide-->
+      <!-- Bildspel, slide-->
       <div class="col-md-4 offset-md-4">
 
         <div class="slide1">
@@ -88,13 +92,13 @@
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="img/välkommen.jpg" class="slideimg">
+                <img src="img/välkommen.jpg" class="slideimg" alt="">
               </div>
               <div class="carousel-item">
-                <img src="img/alla.jpg  " class="slideimg" >
+                <img src="img/alla.jpg  " class="slideimg" alt="">
               </div>
               <div class="carousel-item">
-                <img src="img/mera.jpg" class="slideimg">
+                <img src="img/mera.jpg" class="slideimg" alt="">
               </div>
             </div>
           </div>
@@ -110,20 +114,21 @@
 
     <!-- Nedräkning till nästa tjejhack-->
     <div class="count">
-      <p>Nästa tjejhack är om</p>
+      <p>Nästa tjejhack är den 29/5, vilket är om</p>
       <p id="nedrak"></p>
     </div>
+    <!-- Slut -->
 
 
-
+    <!-- Länk till undervisningsmaterial -->
     <div class="row">
 
 
 
-    <!-- Länk till undervisningsmaterial -->
+    
       <div class="col-md-4 offset-md-4">
         <div class="material">
-          <a href="https://docs.google.com/document/d/1wHjENfKS35pxIJBCpY6p1pe8bxh9lJHSridFDkwG3x8/edit#heading=h.tppqkydz88fh"><button class="btn btn-material">Hämta undervisningsmaterial</button></a>
+          <a class="btn btn-material" href="https://docs.google.com/document/d/1wHjENfKS35pxIJBCpY6p1pe8bxh9lJHSridFDkwG3x8/edit#heading=h.tppqkydz88fh">Hämta undervisningsmaterial</a>
         </div>
       </div>
 
@@ -132,25 +137,34 @@
 
 
     <div class="row">
-      <div class="col-md-6">
+
+    <!-- Kort info -->
+      <article class="col-md-6">
       <h3 class="startrubrik">Välkommen!</h3>
         <p class="starttext">Välkommen till Tjejhack Ronneby!<br>
            Tjejhack Ronneby genomfördes första gången våren 2018 för alla tjejer som går årskurs sju på skolorna i Ronneby kommun. Det är elever som går Teknikprogrammet på Gymnasieskolan Knut Hahn som arrangerar tjejhacket. Syftet är att tjejer i lugn och ro ska få prova på att programmera. Planen är att tjejhack ska bli något vi genomför varje år. 
         </p>
+      </article>
+      <!-- Slut på info -->
+
+
+      <article class="col-md-6">
+
+      <!-- Press -->
+      <h3 class=" startrubrik">Press</h3>
+      <div class="press">
+      <p class="starttext">Tjejhack har inte gått obemärkt förbi, våra metoder för programmering i undervisningen har redan uppmärksammats flera gånger.</p>
+      <a class="starttext link" href="https://www.voister.se/artikel/2018/06/koda-latt-i-windows/">Här kan ni läsa en artikel med Fredrik</a>
+      <p class="starttext">Här kan ni lyssna på när Fredrik var med i Podcasten Effekten</p>
+      <iframe class="video" src="https://www.youtube.com/embed/fKG6bVItzZQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
       </div>
-      <div class="col-md-6 ree">
+      <!-- Slut på press -->
 
 
-      <h1>Hur mycket kan du om Python?</h1>
-<div class="quiz-container">
-  <div id="quiz"></div>
-</div>
-<button id="previous" class="quizbtn">Föregående fråga</button>
-<button id="next" class="quizbtn">Nästa fråga</button>
-<button id="svarknapp" class="quizbtn">Avsluta quiz</button>
-<div id="resultat"></div>
+
         
-      </div>
+      </article>
     </div>
 
 
@@ -187,6 +201,6 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
